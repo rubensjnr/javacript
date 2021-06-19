@@ -29,10 +29,10 @@
 
     var nome = window.prompt('Qual o seu nome?') // string
     window.alert('É um grande prazer em te conhecer ' + nome + ', seja bem vindo(a)')
-    var idade = window.prompt('Digite sua idade:') //string
-    var anoAtual = window.prompt('Digite o ano atual') //string
+    var idade = Number(window.prompt('Digite sua idade:')) //string
+    var anoAtual = Number(window.prompt('Digite o ano atual')) //string
     var anoNascimento = anoAtual - idade
-    window.alert('Você nasceu no ano de: ' + anoNascimento)
+    window.alert(nome + ', você nasceu no ano de ' + anoNascimento + ', e possui '+ idade + ' anos de idade!')
 
     
 
