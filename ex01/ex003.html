@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS EX 03</title>
+    <style>
+        body{
+            background-color: #8e74ca;
+            color: #ffffff;
+            font:normal 16pt Arial;
+        }
+        h1{
+                color: rgb(184, 204, 6);
+            }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Olá, mundo!</h1>
+    <p>Já me livrei da maldição!!</p>
+
+<script>
+    //window.alert('Minha primeira mensagem')
+    //window.confirm('Está gostando de JS?')
+
+    var nome = window.prompt('Qual o seu nome?') // string
+    window.alert('É um grande prazer em te conhecer ' + nome + ', seja bem vindo(a)')
+    var idade = window.prompt('Digite sua idade:') //string
+    var anoAtual = window.prompt('Digite o ano atual') //string
+    var anoNascimento = anoAtual - idade
+    window.alert('Você nasceu no ano de: ' + anoNascimento)
+
+    
+
+</script>
+
+</body>
+
+</html>
