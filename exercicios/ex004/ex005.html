@@ -17,10 +17,12 @@
 <body>
 <script>
     var nome = window.prompt('Digite seu nome:')
-	var idade= Number(window.prompt('Digite sua idade:'))
+	var idade = Number(window.prompt('Digite sua idade:'))
+    var valor = Number(window.prompt('Digite o valor R$:'))
 	anoNascimento = 2021 - idade
-	document.writeln(`Olá ${nome}, sejá bem vindo!<br/>`)
-	document.writeln(`${nome}, você possui ${idade} anos de idade, portanto, você nasceu em: ${anoNascimento}`)
+	document.writeln(`Olá <strong>${nome}</strong>, sejá bem vindo!<br/>`)
+	document.writeln(`${nome.toUpperCase()}, você possui ${idade} anos de idade, portanto, você nasceu em: ${anoNascimento}<br/>`)
+    document.writeln(`${valor.toLocaleString('pt-br', {style:'currency', currency: 'BRL'})}`)
 </script>
 </body>
 </html>
