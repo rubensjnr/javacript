@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex05</title>
+    <style>
+        body{
+            background-color: #8d1cf7;
+            color:#ffffff;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16pt;
+        }
+    </style>
+</head>
+<body>
+<script>
+    var nome = window.prompt('Digite seu nome:')
+	var idade= Number(window.prompt('Digite sua idade:'))
+	anoNascimento = 2021 - idade
+	document.writeln(`Olá ${nome}, sejá bem vindo!<br/>`)
+	document.writeln(`${nome}, você possui ${idade} anos de idade, portanto, você nasceu em: ${anoNascimento}`)
+</script>
+</body>
+</html>
