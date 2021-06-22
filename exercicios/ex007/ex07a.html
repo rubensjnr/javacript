@@ -19,9 +19,11 @@
 </head>
 <body>
     <h1>Somando Valores</h1>
-    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn1" id="txtn1"> .
     <input type="number" name="txtn2" id="txtn2">
     <input type="button" value="Somar" onclick="somar()">
+    <input type="button" value="Multiplicar" onclick="multip()">
+    <input type="button" value="Subtrair" onclick="subtrair()">
     
     <div id="res"><br>Resultado</div>
     <script>
@@ -32,8 +34,28 @@
             var n1 = Number(tn1.value)
             var n2 = Number(tn2.value)
             var s = n1+n2
-            res.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${s}</strong>`
+            res.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${s}</strong>!`
         }
+        function multip(){
+            var m1 = window.document.getElementById('txtn1')
+            var m2 = window.document.getElementById('txtn2')
+            var res = window.document.querySelector('div#res')
+            var n1 = Number(m1.value)
+            var n2 = Number(m2.value)
+            var mu = n1*n2
+            res.innerHTML = `A Multiplicação entre ${n1} por ${n2} tem como resultado <strong>${mu}</strong>!`
+        }
+        function subtrair(){
+            var sn1 = window.document.getElementById('txtn1')
+            var sn2 = window.document.getElementById('txtn2')
+            var res = window.document.querySelector('div#res')
+            var n1 = Number(sn1.value)
+            var n2 = Number(sn2.value)
+            var sb = n1-n2
+            res.innerHTML = `A Subtração entre ${n1} e ${n2} tem o resultado final de <strong>${sb}</strong>!`
+        }
+
+        
     </script>
 </body>
 </html>
