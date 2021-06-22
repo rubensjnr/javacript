@@ -18,11 +18,8 @@
         <p>Aqui vei o resultado</p>
             <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
         <div class="msg">Clique em mim</div>
-
         <div id="hw">Hello World</div>
-
         <div class ="ola"> Ola mundo</div>
-
     <script>
 
         /*
@@ -33,13 +30,13 @@ d.innerText	= 'Estou aguardando'
         var corpo = window.document.getElementsByTagName('p')[1]
         var d = window.document.querySelector('div.msg')
         var a = window.document.querySelector('div.ola')
+        var t = window.document.getElementById('hw')
     
             d.style.background = 'blue'
             d.innerHTML = 'Clica em mim aii'
-
+            t.style.background = 'green'
             a.style.background = 'red'
 
-        
         </script>
 
 </body>
