@@ -19,7 +19,9 @@
         var res = document.querySelector('div#res')
         var origem = String(pnatal.value)
         res.innerHTML = `<p>Você nasceu no/na <strong>${origem}</strong>!!</p>`
-        if(origem == `Brasil`){
+        if (origem == `Argentina`){
+            res.innerHTML += `<p>Você é um <strong>Boludo Lixo</strong></p>`
+        } if(origem == `Brasil`){
             res.innerHTML += `<p>Você é um <strong>Brasileirinho</strong></p>`   
         } else {
             res.innerHTML += `<p>Você é um <strong>Gringo</strong></p>`
