@@ -17,12 +17,12 @@
     function verificar(){
         var pnatal = document.querySelector('input#txtpais')
         var res = document.querySelector('div#res')
-        var origem = pnatal
-        res.innerHTML = `<p>Você nasceu em ${origem}!!</p>`
+        var origem = String(pnatal.value)
+        res.innerHTML = `<p>Você nasceu no/na <strong>${origem}</strong>!!</p>`
         if(origem == `Brasil`){
-            res.innerHTML += `Você é Brasileiro`   
+            res.innerHTML += `<p>Você é um <strong>Brasileirinho</strong></p>`   
         } else {
-            res.innerHTML += `Você é um Estrangeiro`
+            res.innerHTML += `<p>Você é um <strong>Gringo</strong></p>`
         }
     }
     </script>
