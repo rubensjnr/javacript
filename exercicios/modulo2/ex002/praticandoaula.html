@@ -34,21 +34,20 @@
             let d = c.indexOf(item)
 
             if (d == -1){
-                res.innerHTML = 'O valor não foi encontrado!</br>'
+                res.innerHTML = 'O valor não foi encontrado!</br></br>'
             } else {
                 res.innerHTML = `O valor procurado esta na posição ${d} sem o comando <strong>sort</strong></br>`
                 res.innerHTML += `Exitem ${c.length} casas dentro dessa Array, de 0 a ${c.length - 1}</br></br>`
-                }
-            for(let b in c){
+                for(let b in c){
                 res.innerHTML += `A posição ${b} possui o valor ${c[b]}</br>`
-
                 }
                 res.innerHTML += `</br>Posições  com itens organizados!!</br></br>`
-
                 for(let b in c){
                     c.sort()
                     res.innerHTML += `A posição ${b} possui o valor ${c[b]}</br>`
                 }
+                }
+               
         }
     </script>
 </body>
