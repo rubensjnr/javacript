@@ -12,9 +12,12 @@ console.log('DIVIDINDO')
 
 let c = [5,8,4,9,6]
 let d = c.indexOf(4)
+    if (d == -1){
+        console.log('O valor não foi encontrado!')
+    } else {
+        console.log(`O valor procurado esta na posição ${d} sem o comando sort()`)
+    }
 c.sort()
     for(let b in c){
         console.log(`A posição ${b} possui o valor ${c[b]}`)
     }
-    let f = c.indexOf(4)
-    console.log(`O valor 4 esta na posição ${d} mas apos o (sort) ele fica na posição ${f}`)
