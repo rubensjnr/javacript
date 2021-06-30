@@ -10,15 +10,28 @@
 </head>
 <body>
         <header>
-            <h1></h1>
+            <h1>Verificar perfil</h1>
         </header>
         <main>
-            <div>
-               TESTE
+            <div id="nasc">
+                <p> Ano de Nascimento: <input type="text" name="idade" id="txtAno">
+                </p>
             </div>
-
-            <div>
-
+            <div id="sexo">
+                <p> Sexo: <input type="radio" name="radsex" id="mas">
+                    <label for="mas">Masculino</label>
+                    <input type="radio" name="radsex" id="fem">
+                    <label for="fem">Feminino</label>
+                </p>
+            </div>
+            <div id="botao">
+                <input type="button" value="Verificar" onclick="verificar()">
+            </div>
+            <div id="res">
+                Preencha os dados acima para ver o resultado!
+            </div>
+            <div id="imagemA">
+                <img id="imgx" src="link" alt="">
             </div>
         </main>
         <footer>
