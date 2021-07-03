@@ -14,6 +14,7 @@ function verificar(){
         var fsex = document.getElementsByName('sexrd')
         var genero = ''
         if (fsex[0].checked){
+            genero = 'Homem'
             if (idade <= 10){
                 img.src='imagens/crianca-m.jpg'
             } else if ( idade > 10 && idade < 18){
@@ -27,6 +28,7 @@ function verificar(){
             }
         
         } else if (fsex[1].checked){
+            genero = 'Mulher'
             if (idade <= 10){
                 img.src='imagens/crianca-f.jpg'
             } else if ( idade > 10 && idade < 18){
