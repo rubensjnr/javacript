@@ -14,12 +14,14 @@ function contar(){
         res.innerHTML = `Contando: `
         if (ini <= fim){
             for ( let c = ini ; c <= fim ; c += npassos ){
-                res.innerHTML += `${c} \u{1F449}`
+                res.innerHTML += `\u{1F449}${c}`
+
             } 
         } else {
             for (let d = ini; d >= fim; d -= npassos){
                 res.innerHTML += `\u{1F449} ${d}`
             }
         }
+        res.innerHTML += `\u{1F3C1}`
     }
 }
