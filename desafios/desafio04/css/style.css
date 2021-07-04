@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+body {
+    background: #80007a;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+}
+
+main {
+    background: #ffffff;
+    width: 500px;
+    margin: auto;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #000000e8;
+}
+
+footer{
+    text-align: center;
+    color: #ffffff;
+}
