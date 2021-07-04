@@ -13,7 +13,7 @@ function calcular(){
             item.text = `${n} x ${c} = ${n*c}`
             item.value = `tab${c}`
             tab.appendChild(item)
-        }
+        } 
            
     }
 }
