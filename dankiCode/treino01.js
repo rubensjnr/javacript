@@ -1,4 +1,8 @@
 
 var nome = ['Rubens','Lucas', 'Baitaka']
 
-console.log(nome[0])
+nome[2] = 'Reinaldo'
+
+nome.push('Dotinha')
+
+console.log(nome[3])
